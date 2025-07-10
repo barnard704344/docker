@@ -1,0 +1,3 @@
+[nutmon]
+  password = secret
+  upsmon master

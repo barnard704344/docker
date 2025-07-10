@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  nut-server:
+    container_name: nut-server
+    image: nut-server
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3493:3493"
+    devices:
+      - "/dev/bus/usb:/dev/bus/usb"
+    volumes:
+      - ./nut:/etc/nut"
